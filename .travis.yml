@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - '2.1'
 install: gem install jekyll
-script: "./travis_build.sh"
+script: "./scripts/travis_build.sh"
 notifications:
   hipchat:
     rooms:

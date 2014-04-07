@@ -2,7 +2,7 @@
 # This script is for use in travis-ci only.
 
 # Generate site from markdown source
-jekyll build
+jekyll build && cd scripts && ./check_urls.sh
 
 # Exit with appropriate exit code if jekyll failed
 if [ $? != 0 ]; then exit $?; fi
