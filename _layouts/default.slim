@@ -1,0 +1,38 @@
+doctype html
+/[if lt IE 7]
+  html.no-js.lt-ie9.lt-ie8.lt-ie7
+/[if IE 7]
+  html.no-js.lt-ie9.lt-ie8
+/[if IE 8]
+  html.no-js.lt-ie9
+/! [if gt IE 8]><!
+html.no-js
+  /! <![endif]
+  head
+    title
+      | {% if page.title %}
+      | {{ page.title}} -&nbsp;
+      | {% endif %}
+      | {{ site.title }}
+
+    meta content="{{ site.title }}" property="og:title" /
+    | {% slim head.slim %}
+
+  body
+    /[if lt IE 10]
+      p.browsehappy
+        | You are using an&nbsp;
+        strong outdated
+        | &nbsp;browser. Please&nbsp;
+        a href="http://browsehappy.com" upgrade your browser
+        | &nbsp;to improve your experience.
+
+    .site
+      .header
+        h1.title
+          a href="/"
+            | {{ site.title }}
+        a.extra href="/"
+          | home
+
+      | {{ content }}

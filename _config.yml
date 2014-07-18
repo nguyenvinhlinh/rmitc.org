@@ -1,8 +1,15 @@
-name: RMIT Vietnam IT Club
+title: RMIT Vietnam IT Club
 markdown: redcarpet
 pygments: true
 encoding: UTF-8
-exclude: [README.mkd, travis_build.sh]
+exclude: [README.mkd, travis_build.sh, Gemfile, Gemfile.lock]
+
+asset_pipeline:
+  bundle: true
+  compress: true
+  output_path: assets
+  display_path: nil
+  gzip: false
 
 authors:
 
