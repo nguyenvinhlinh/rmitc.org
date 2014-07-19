@@ -1,3 +1,20 @@
+/* Modules and Variables */
+@import "partials/base";
+
+/* Third-parties */
+// Font Awesome
+$fa-font-path: "../../bower_components/font-awesome/fonts/";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+// Animate SASS
+@import "../../bower_components/animate-sass/animate";
+// Twitter Bootstrap
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+// Others
+@import "vendors/slick";
+@import "vendors/syntax.css";
+
+
 body {
     font-family: sans-serif;
 }
