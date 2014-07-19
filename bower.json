@@ -1,0 +1,23 @@
+{
+  "name": "rmitc.org",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rmitc/rmitc.org",
+  "authors": [
+    "rmitc"
+  ],
+  "description": "Source files for RMITC website",
+  "main": "_assets/stylesheets/main.scss",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
