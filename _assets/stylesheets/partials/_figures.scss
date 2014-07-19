@@ -1,0 +1,209 @@
+/* Background classes */
+.mainback {
+  @extend .hardcore;
+  background-color: $color-itc;
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-white;
+  }
+
+  @include custom-responsive(wide-screens) {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 21px;
+    }
+  }
+
+  @include custom-responsive(medium-screens) {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 21px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
+}
+
+.secondback {
+  background-color: $color-white;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.secondback2 {
+  background-color: $color-white;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.thirdback {
+  background-color: $color-black;
+  color: $color-white;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.thirdmini {
+  background-color: lighten($color-black, 20%);
+  width: 100%;
+}
+
+.forthback {
+  background-color: $color-itc;
+  color: $color-white;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.forthmini {
+  background-color: $color-itc-lighten;
+  width: 100%;
+}
+
+/* Navigations */
+.navitc {
+  @extend .none-bor;
+  font-size: 18px;
+  margin-bottom: 0px !important;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  .nav {
+    li {
+      a {
+        color: $color-white;
+        font-family: $ubuntu;
+        font-weight: bold;
+        &:hover {
+          background-color: $color-white;
+          color: $color-itc;
+        }
+      }
+    }
+    .active {
+      a {
+        color: $color-itc;
+        font-family: $ubuntu;
+        font-weight: bold;
+        &:hover {
+          color: $color-itc-darken;
+        }
+      }
+    }
+  }
+}
+
+.navblog {
+  @extend .none-bor;
+  background-color: $color-white;
+  font-size: 18px;
+  margin-bottom: 0px !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  .navbar-header {
+    li {
+      display: block;
+      a {
+        color: $color-itc;
+        font-family: $ubuntu;
+        font-weight: bold;
+        padding: 10xp 15px 10px 15px;
+        &:hover {
+          background-color: $color-itc;
+          color: $color-white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .nav {
+    li {
+      a {
+        color: $color-itc;
+        font-family: $ubuntu;
+        font-weight: bold;
+        &:hover {
+          background-color: $color-itc;
+          color: $color-white;
+        }
+      }
+    }
+    .active {
+      a {
+        color: $color-itc;
+        font-family: $ubuntu;
+        font-weight: bold;
+        &:hover {
+          color: $color-itc;
+        }
+      }
+    }
+  }
+}
+
+.container > .navbar-header {
+  @include custom-responsive(wide-screens) {
+    padding-left: 0px;
+  }
+
+  @include custom-responsive(medium-screens) {
+    padding-left: 15px;
+  }
+}
+
+.pagitc {
+  li {
+    a {
+      background-color: inherit;
+      border: 0px solid $color-white;
+      color: $color-white;
+      font-weight: bold;
+      &:hover {
+        background-color: $color-white;
+        color: $color-itc;
+      }
+    }
+  }
+  .disabled {
+    a {
+      background-color: inherit;
+      color: $color-grey;
+      &:hover {
+        background-color: inherit;
+      }
+    }
+  }
+  .active {
+    a {
+      background-color: $color-itc;
+      color: $color-white;
+      &:hover {
+        background-color: $color-itc-darken;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.pagitc > li:first-child > a,
+.pagitc > li:last-child > a {
+  @extend .none-rad;
+}

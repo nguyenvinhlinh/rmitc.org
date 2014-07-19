@@ -1,0 +1,40 @@
+.browsehappy {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
+// Base style for all
+body {
+  font-family: $ubuntu;
+  font-size: 16px;
+  &.body-itc {
+    background-color: $color-itc;
+  }
+  &.body-white {
+    background-color: $color-white;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ubuntu;
+  color: $color-white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}

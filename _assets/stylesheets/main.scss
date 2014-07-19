@@ -3,16 +3,22 @@
 
 /* Third-parties */
 // Font Awesome
-$fa-font-path: "../../bower_components/font-awesome/fonts/";
+$fa-font-path: "../../bower_components/font-awesome/fonts";
 @import "../../bower_components/font-awesome/scss/font-awesome";
 // Animate SASS
 @import "../../bower_components/animate-sass/animate";
 // Twitter Bootstrap
-$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap";
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 // Others
 @import "vendors/slick";
 @import "vendors/syntax.css";
+
+/* Partials */
+// Always import resets first!
+@import "partials/reset";
+@import "partials/figures";
+@import "partials/buttons";
 
 
 body {

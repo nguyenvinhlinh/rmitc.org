@@ -1,0 +1,9 @@
+.btn-itc {
+  @extend .none-rad;
+  background-color: $color-itc;
+  color: $color-white;
+  &:hover {
+    background-color: $color-itc-darken;
+    color: $color-white;
+  }
+}
