@@ -18,7 +18,7 @@ html.no-js
     meta content="{{ site.title }}" property="og:title" /
     | {% slim head.slim %}
 
-  body
+  body class="{{ body_class }}"
     /[if lt IE 10]
       p.browsehappy
         | You are using an&nbsp;
@@ -27,12 +27,4 @@ html.no-js
         a href="http://browsehappy.com" upgrade your browser
         | &nbsp;to improve your experience.
 
-    .site
-      .header
-        h1.title
-          a href="/"
-            | {{ site.title }}
-        a.extra href="/"
-          | home
-
-      | {{ content }}
+    | {{ content }}

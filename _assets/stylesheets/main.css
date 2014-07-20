@@ -29,85 +29,90 @@
   box-shadow: 0px 0px 0px 0px white;
 }
 
+/* line 27, modules/_utilities.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* Support classes */
-/* line 28, modules/_utilities.scss */
+/* line 32, modules/_utilities.scss */
 .vodanh {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 33, modules/_utilities.scss */
+/* line 37, modules/_utilities.scss */
 .vodanh li a {
   color: white;
 }
-/* line 35, modules/_utilities.scss */
+/* line 39, modules/_utilities.scss */
 .vodanh li a:hover {
   color: #49c2c4;
 }
 
-/* line 42, modules/_utilities.scss */
+/* line 46, modules/_utilities.scss */
 .vohoc {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #545858;
 }
-/* line 46, modules/_utilities.scss */
+/* line 50, modules/_utilities.scss */
 .vohoc h1, .vohoc h2, .vohoc h3, .vohoc h4, .vohoc h5, .vohoc h6 {
   color: black;
 }
-/* line 48, modules/_utilities.scss */
+/* line 52, modules/_utilities.scss */
 .vohoc h1 a, .vohoc h2 a, .vohoc h3 a, .vohoc h4 a, .vohoc h5 a, .vohoc h6 a {
   color: #49c2c4;
 }
-/* line 50, modules/_utilities.scss */
+/* line 54, modules/_utilities.scss */
 .vohoc h1 a:hover, .vohoc h2 a:hover, .vohoc h3 a:hover, .vohoc h4 a:hover, .vohoc h5 a:hover, .vohoc h6 a:hover {
   cursor: pointer;
   color: #297d7e;
   text-decoration: none;
 }
 
-/* line 59, modules/_utilities.scss */
+/* line 63, modules/_utilities.scss */
 .volai {
   padding: 30px 20px 30px 20px;
   margin-bottom: 20px;
   background-color: white;
   color: #545858;
 }
-/* line 64, modules/_utilities.scss */
+/* line 68, modules/_utilities.scss */
 .volai h1, .volai h2, .volai h3, .volai h4, .volai h5, .volai h6 {
   color: black;
 }
-/* line 66, modules/_utilities.scss */
+/* line 70, modules/_utilities.scss */
 .volai h1 a, .volai h2 a, .volai h3 a, .volai h4 a, .volai h5 a, .volai h6 a {
   color: #49c2c4;
 }
-/* line 68, modules/_utilities.scss */
+/* line 72, modules/_utilities.scss */
 .volai h1 a:hover, .volai h2 a:hover, .volai h3 a:hover, .volai h4 a:hover, .volai h5 a:hover, .volai h6 a:hover {
   cursor: pointer;
   color: #297d7e;
 }
-/* line 74, modules/_utilities.scss */
+/* line 78, modules/_utilities.scss */
 .volai a {
   color: #49c2c4;
 }
-/* line 76, modules/_utilities.scss */
+/* line 80, modules/_utilities.scss */
 .volai a:hover {
   cursor: pointer;
   color: #297d7e;
 }
 
-/* line 83, modules/_utilities.scss */
+/* line 87, modules/_utilities.scss */
 .vodoi {
   padding-top: 30px;
   padding-bottom: 30px;
   color: white;
 }
-/* line 87, modules/_utilities.scss */
+/* line 91, modules/_utilities.scss */
 .vodoi h1, .vodoi h2, .vodoi h3, .vodoi h4, .vodoi h5, .vodoi h6 {
   color: white;
 }
 
-/* line 92, modules/_utilities.scss */
+/* line 96, modules/_utilities.scss */
 .vohinh {
   width: 100%;
   margin-bottom: 10px;
@@ -10692,7 +10697,7 @@ button.close {
 }
 /* line 60, vendors/_slick.scss */
 .slick-loading .slick-list {
-  background: white url('/./_assets/images/ajax-loader.gif?1405826517') center center no-repeat;
+  background: white url('/./_assets/images/ajax-loader.gif') center center no-repeat;
 }
 /* line 64, vendors/_slick.scss */
 .slick-list.dragging {
@@ -10916,16 +10921,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
 }
-/* line 12, partials/_reset.scss */
-body.body-itc {
-  background-color: #49c2c4;
-}
-/* line 15, partials/_reset.scss */
-body.body-white {
-  background-color: white;
-}
 
-/* line 25, partials/_reset.scss */
+/* line 19, partials/_reset.scss */
 h1,
 h2,
 h3,
@@ -10936,75 +10933,85 @@ h6 {
   color: white;
 }
 
-/* line 30, partials/_reset.scss */
+/* line 24, partials/_reset.scss */
 h1 {
   font-size: 50px;
 }
 
-/* line 34, partials/_reset.scss */
+/* line 28, partials/_reset.scss */
 h2 {
   font-size: 35px;
 }
 
-/* line 38, partials/_reset.scss */
+/* line 32, partials/_reset.scss */
 h3 {
   font-size: 28px;
 }
 
-/* Background classes */
-/* line 2, partials/_figures.scss */
-.mainback {
+/* Body classes */
+/* line 3, partials/_figures.scss */
+body.body-itc {
   background-color: #49c2c4;
 }
 /* line 6, partials/_figures.scss */
+body.body-white {
+  background-color: white;
+}
+
+/* Background classes */
+/* line 12, partials/_figures.scss */
+.mainback {
+  background-color: #49c2c4;
+}
+/* line 16, partials/_figures.scss */
 .mainback h1, .mainback h2, .mainback h3, .mainback h4, .mainback h5, .mainback h6 {
   color: white;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 11, partials/_figures.scss */
+  /* line 21, partials/_figures.scss */
   .mainback h1 {
     font-size: 50px;
   }
-  /* line 14, partials/_figures.scss */
+  /* line 24, partials/_figures.scss */
   .mainback h2 {
     font-size: 35px;
   }
-  /* line 17, partials/_figures.scss */
+  /* line 27, partials/_figures.scss */
   .mainback h3 {
     font-size: 28px;
   }
-  /* line 20, partials/_figures.scss */
+  /* line 30, partials/_figures.scss */
   .mainback h4 {
     font-size: 21px;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 26, partials/_figures.scss */
+  /* line 36, partials/_figures.scss */
   .mainback h1 {
     font-size: 35px;
   }
-  /* line 29, partials/_figures.scss */
+  /* line 39, partials/_figures.scss */
   .mainback h2 {
     font-size: 26px;
   }
-  /* line 32, partials/_figures.scss */
+  /* line 42, partials/_figures.scss */
   .mainback h3 {
     font-size: 21px;
   }
-  /* line 35, partials/_figures.scss */
+  /* line 45, partials/_figures.scss */
   .mainback h4 {
     font-size: 18px;
   }
 }
 
-/* line 41, partials/_figures.scss */
+/* line 51, partials/_figures.scss */
 .secondback {
   background-color: white;
   padding-bottom: 50px;
   width: 100%;
 }
 
-/* line 47, partials/_figures.scss */
+/* line 57, partials/_figures.scss */
 .secondback2 {
   background-color: white;
   bottom: 0;
@@ -11014,7 +11021,7 @@ h3 {
   width: 100%;
 }
 
-/* line 56, partials/_figures.scss */
+/* line 66, partials/_figures.scss */
 .thirdback {
   background-color: black;
   color: white;
@@ -11023,13 +11030,13 @@ h3 {
   width: 100%;
 }
 
-/* line 64, partials/_figures.scss */
+/* line 74, partials/_figures.scss */
 .thirdmini {
   background-color: #333333;
   width: 100%;
 }
 
-/* line 69, partials/_figures.scss */
+/* line 79, partials/_figures.scss */
 .forthback {
   background-color: #49c2c4;
   color: white;
@@ -11038,43 +11045,44 @@ h3 {
   width: 100%;
 }
 
-/* line 77, partials/_figures.scss */
+/* line 87, partials/_figures.scss */
 .forthmini {
   background-color: #96dcdd;
   width: 100%;
 }
 
 /* Navigations */
-/* line 83, partials/_figures.scss */
+/* line 93, partials/_figures.scss */
 .navitc {
+  background-color: #49c2c4;
   font-size: 18px;
   margin-bottom: 0px !important;
   padding-bottom: 10px;
   padding-top: 25px;
 }
-/* line 91, partials/_figures.scss */
+/* line 102, partials/_figures.scss */
 .navitc .nav li a {
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-/* line 95, partials/_figures.scss */
+/* line 106, partials/_figures.scss */
 .navitc .nav li a:hover {
   background-color: white;
   color: #49c2c4;
 }
-/* line 102, partials/_figures.scss */
+/* line 113, partials/_figures.scss */
 .navitc .nav .active a {
   color: #49c2c4;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-/* line 106, partials/_figures.scss */
+/* line 117, partials/_figures.scss */
 .navitc .nav .active a:hover {
   color: #1c5758;
 }
 
-/* line 114, partials/_figures.scss */
+/* line 125, partials/_figures.scss */
 .navblog {
   background-color: white;
   font-size: 18px;
@@ -11082,85 +11090,85 @@ h3 {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 122, partials/_figures.scss */
+/* line 133, partials/_figures.scss */
 .navblog .navbar-header li {
   display: block;
 }
-/* line 124, partials/_figures.scss */
+/* line 135, partials/_figures.scss */
 .navblog .navbar-header li a {
   color: #49c2c4;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   padding: 10xp 15px 10px 15px;
 }
-/* line 129, partials/_figures.scss */
+/* line 140, partials/_figures.scss */
 .navblog .navbar-header li a:hover {
   background-color: #49c2c4;
   color: white;
   text-decoration: none;
 }
-/* line 139, partials/_figures.scss */
+/* line 150, partials/_figures.scss */
 .navblog .nav li a {
   color: #49c2c4;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-/* line 143, partials/_figures.scss */
+/* line 154, partials/_figures.scss */
 .navblog .nav li a:hover {
   background-color: #49c2c4;
   color: white;
 }
-/* line 150, partials/_figures.scss */
+/* line 161, partials/_figures.scss */
 .navblog .nav .active a {
   color: #49c2c4;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-/* line 154, partials/_figures.scss */
+/* line 165, partials/_figures.scss */
 .navblog .nav .active a:hover {
   color: #49c2c4;
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 162, partials/_figures.scss */
+  /* line 173, partials/_figures.scss */
   .container > .navbar-header {
     padding-left: 0px;
   }
 }
 @media only screen and (max-width: 750px) {
-  /* line 162, partials/_figures.scss */
+  /* line 173, partials/_figures.scss */
   .container > .navbar-header {
     padding-left: 15px;
   }
 }
 
-/* line 174, partials/_figures.scss */
+/* line 185, partials/_figures.scss */
 .pagitc li a {
   background-color: inherit;
   border: 0px solid white;
   color: white;
   font-weight: bold;
 }
-/* line 179, partials/_figures.scss */
+/* line 190, partials/_figures.scss */
 .pagitc li a:hover {
   background-color: white;
   color: #49c2c4;
 }
-/* line 186, partials/_figures.scss */
+/* line 197, partials/_figures.scss */
 .pagitc .disabled a {
   background-color: inherit;
   color: #545858;
 }
-/* line 189, partials/_figures.scss */
+/* line 200, partials/_figures.scss */
 .pagitc .disabled a:hover {
   background-color: inherit;
 }
-/* line 195, partials/_figures.scss */
+/* line 206, partials/_figures.scss */
 .pagitc .active a {
   background-color: #49c2c4;
   color: white;
 }
-/* line 198, partials/_figures.scss */
+/* line 209, partials/_figures.scss */
 .pagitc .active a:hover {
   background-color: #1c5758;
   color: white;
@@ -11175,20 +11183,4 @@ h3 {
 .btn-itc:hover {
   background-color: #1c5758;
   color: white;
-}
-
-/* line 24, main.scss */
-body {
-  font-family: sans-serif;
-}
-
-/* line 29, main.scss */
-.header,
-.footer {
-  background-color: #eee;
-}
-/* line 32, main.scss */
-.header p,
-.footer p {
-  font-weight: 100;
 }

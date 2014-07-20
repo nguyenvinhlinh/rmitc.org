@@ -1,0 +1,30 @@
+---
+layout: default
+---
+h2
+  | {{ page.title }}
+p.meta
+  | {{ page.date | date_to_string }}
+.post
+  | {{ content }}
+| {% if page.author %}
+| {% assign author = site.authors[page.author] %}
+.footer
+  .contact
+    p
+      | {{ author.display_name }}
+      br/
+      | {{ author.email }}
+  .contact
+    p
+      | {% if author.github %}
+      a href="https://github.com/{{ author.github }}"
+        | github.com/{{ author.github }}
+      br/
+      | {% endif %}
+      | {% if author.twitter %}
+      a href="https://twitter.com/{{ author.twitter }}"
+        | twitter.com/{{ author.twitter }}
+      br/
+      | {% endif %}
+| {% endif %}

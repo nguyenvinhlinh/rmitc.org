@@ -24,6 +24,10 @@
   @extend .none-sha;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* Support classes */
 .vodanh {
   width: 100%;
