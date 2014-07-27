@@ -12,7 +12,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 // Others
 @import "vendors/slick";
-@import "vendors/syntax.css";
+@import "CSS:vendors/syntax";
 
 /* Partials */
 // Always import resets first!
